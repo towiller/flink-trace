@@ -51,7 +51,7 @@ public class RabbitmqLogETL {
         env.setStreamTimeCharacteristic(TimeCharacteristic.ProcessingTime);
         env.setParallelism(1);
 
-        mysqlConnectionPool = new DruidDataSource(); //new MysqlConnectionPool("jdbc:mysql://dev.mysql.tsingglobal.cn/metadata", "root", "Tsing1qaz@WSX", 3);
+        mysqlConnectionPool = new DruidDataSource(); 
         mysqlConnectionPool.setUrl("jdbc:mysql://127.0.0.1/metadata");
         mysqlConnectionPool.setUsername("root");
         mysqlConnectionPool.setPassword("123456");
